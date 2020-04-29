@@ -1,8 +1,20 @@
+                        ********* Please note that ****************
+
+  # We cannot implememnt the real message service.Therefore messages will print in server console when RMI server calls the SMS service.
+
+  # Here, it is not used MongoDB local database but MongoDB Atlas cloud which is the global cloud database service 
+  which allows to host and manage the data in the cloud.Therefore we not need any database scripts or any other data-store documents.
+  anyone can access that database. Already data are stored in the MongoDB atlas cloud. 
+ 
+ 
+ INSTALLATION AND SETUP GUIDELINES
+
+ 
  -> clone or download the files
 
 To run the Back-end server (REST API - Implement using nodeJs)
 
-    -> ServiceAPI is the REST API. Open the file in IDE(VS code, Intelj).
+    -> 'ServiceAPI' is the REST API. Open the file in IDE(VS code, Intelj).
     -> run 'npm install' command in the terminal to download the npm modules.
     -> To start the server, in the terminal type and run 'node server'
 
@@ -17,7 +29,7 @@ To run the Back-end server (REST API - Implement using nodeJs)
 
 To run the WebClient (implement using React.js)
 
-    -> fire-sensor-monitor is the Webclient. Open the file in IDE(VS code, Intelj).
+    -> 'fire-sensor-monitor' is the Webclient. Open the file in IDE(VS code, Intelj).
     -> run 'npm install' command in the terminal to download the npm modules.
     -> To start the webclient, in the terminal type and run 'npm start'
 
@@ -38,7 +50,7 @@ These application send the fire alarm status to the REST API every 10 seconds.
 'FireSensorMonitor' is implement using java. That project include both GUI application(Dekstop client and RMI server). 
 GUI is created by using java swing. Used IDE is netbeans.
 
-    ->  Open the 'FireSensorMonitor' in netbeans IDE.
+    ->  Open the 'FireSensorMonitor' project in netbeans IDE.
 
     ->  Project  will give an error because we need to add the json library .jar to the project.
 	Because that library is used to read the JSON data. 
@@ -49,8 +61,8 @@ GUI is created by using java swing. Used IDE is netbeans.
     -> In here 'FireSensor.java' is the RMI server interface and 'FireSensorServer.java' is the RMI server implementation class.
 	Run the 'FireSensorServer.java' class to start the RMI server.
 
-    -> 'SensorListner.java' is the RMI client interface and 'MonitorApp.java' is the RMI client implementation class.
-	Run the 'MonitorApp.java' class to start the RMI Client.
+    -> 'SensorListner.java' is the RMI client interface and 'SensorMonitor.java' is the RMI client implementation class.
+	Run the 'SensorMonitor.java' class to start the RMI Client.
 
     -> Run 'UILogin.java' to start the Admin login interface. 
        In here you can first register to the system by giving email and password. Then Login as a Admin by using creditionals.
@@ -59,15 +71,12 @@ GUI is created by using java swing. Used IDE is netbeans.
 	 Username : admin@gmail.com
 	 password : Admin
        )
-       
+
+    * sometimes, alerts which are shown by the desktop client (when CO2 or smoke level > 5 ), are displayed 
+      behind the window (not always). So, please minimize the window and then it can be seen the desktop alerts.
+     
     
 
-********* Please note that ****************
 
-  # We cannot implememnt the real message service.Therefore messages will print in server console when RMI server calls the SMS service.
-
-  # Here, it is not used MongoDB local database but MongoDB Atlas cloud which is the global cloud database service 
-  which allows to host and manage the data in the cloud.Therefore we not need any database scripts or any other data-store documents.
-  anyone can access that database. Already data are stored in the MongoDB atlas cloud. 
 
 
