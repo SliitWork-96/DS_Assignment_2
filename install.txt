@@ -73,7 +73,7 @@ GUI is created by using java swing. Used IDE is netbeans.
        )
 
     * sometimes, alerts which are shown by the desktop client (when CO2 or smoke level > 5 ), are displayed 
-      behind the window (not always). So, please minimize the window and then it can be seen the desktop alerts.
+      behind the window (not always). So, please minimize the window and then it can be seen the desktop alerts
      
     
 
